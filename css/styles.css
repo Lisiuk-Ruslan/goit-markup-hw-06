@@ -330,11 +330,10 @@ textarea {
   height: 120px;
   padding: 12px 15px;
 
-  font-size: 12px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
 }
 
 .form-field input {
@@ -900,12 +899,18 @@ footer {
 
   letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--h1-text-color);
 
+  outline: none;
   background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+
+.footer-form-label:hover,
+.footer-form-label:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .footer-form-label placeholder {
